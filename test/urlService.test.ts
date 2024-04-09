@@ -20,6 +20,7 @@ describe('URL Shortening Service Integration Tests', () => {
    * Tests that submitting an already shortened URL returns the existing short URL entry.
    * This checks for idempotency in URL shortening requests.
    */
+  
   it('returns existing shortened URL if already present', async () => {
     const originalUrl = 'https://already.shortened';
     // This test implies that `originalUrl` has been previously shortened and exists in the database.
